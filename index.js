@@ -17,7 +17,7 @@ app.get('/*', (req, res) => {
 
     // Check if file exists with any of the supported extensions
     for (const ext of supportedExtensions) {
-        const audioPath = path.join(__dirname, ${requestedPath}${ext});
+        const audioPath = path.join(__dirname, `${requestedPath}${ext}`);
         if (fs.existsSync(audioPath)) {
             res.sendFile(audioPath);
             found = true;
@@ -32,5 +32,5 @@ app.get('/*', (req, res) => {
 
 // Start the server
 app.listen(PORT, () => {
-    console.log(Server is running on http://localhost:${PORT});
+    console.log(`Server is running on http://localhost:${PORT}`);
 });
