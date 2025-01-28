@@ -1,0 +1,12 @@
+{
+  "name": "dynamic-audio-server",
+  "version": "1.0.0",
+  "description": "A Node.js server to dynamically serve audio files and static content.",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "dependencies": {
+    "express": "^4.18.2"
+  }
+}
